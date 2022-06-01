@@ -80,7 +80,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="242,489" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="242,478" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:GenericValue" Name="strCity" />
       <Variable x:TypeArguments="x:String" Default="https://us.yahoo.com/" Name="strUrlGoogle" />
@@ -257,7 +257,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <Flowchart sap2010:Annotation.AnnotationText="Do weather and outfit check" sap:VirtualizedContainerService.HintSize="200,82" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap2010:Annotation.AnnotationText="Do weather and outfit check" sap:VirtualizedContainerService.HintSize="710,837" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Default="Lighter Colors or Looser or Shorts and Skirts cloths better. Say No to Sleeves&#xA;Put on a Summer Hat, Protect Your Eyes With Glasses and Comfortable Shoes" Name="strHot" />
         <Variable x:TypeArguments="x:String" Default="A hat, A scarf or knit mask to cover face and mouth, Sleeves that are snug at the wrist,, Several layers of loose-fitting clothing," Name="strSunny" />
@@ -286,10 +286,10 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <av:Point x:Key="ShapeLocation">305,416.5</av:Point>
+            <av:Point x:Key="ShapeLocation">485,406.5</av:Point>
             <av:Size x:Key="ShapeSize">70,87</av:Size>
-            <av:PointCollection x:Key="TrueConnector">305,460 140,460 140,500</av:PointCollection>
-            <av:PointCollection x:Key="FalseConnector">375,460 405,460 405,526.5 350,526.5 350,556.5</av:PointCollection>
+            <av:PointCollection x:Key="TrueConnector">485,450 140,450 140,500</av:PointCollection>
+            <av:PointCollection x:Key="FalseConnector">555,450 585,450 585,516.5 410,516.5 410,546.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <FlowDecision.True>
@@ -327,9 +327,9 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <av:Point x:Key="ShapeLocation">315,556.5</av:Point>
+                <av:Point x:Key="ShapeLocation">375,546.5</av:Point>
                 <av:Size x:Key="ShapeSize">70,87</av:Size>
-                <av:PointCollection x:Key="TrueConnector">315,600 140,600 140,630</av:PointCollection>
+                <av:PointCollection x:Key="TrueConnector">375,590 140,590 140,630</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
@@ -363,7 +363,7 @@
         </FlowDecision.False>
       </FlowDecision>
       <x:Reference>__ReferenceID0</x:Reference>
-      <FlowDecision DisplayName="Hot" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
+      <FlowDecision x:Name="__ReferenceID5" DisplayName="Hot" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
         <FlowDecision.Condition>
           <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">(Convert.ToInt32(intTemperature)-32)*5/9 &gt; 25</mca:CSharpValue>
         </FlowDecision.Condition>
@@ -372,7 +372,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <av:Point x:Key="ShapeLocation">315,256.5</av:Point>
             <av:Size x:Key="ShapeSize">70,87</av:Size>
-            <av:PointCollection x:Key="FalseConnector">385,300 400,300 400,386.5 340,386.5 340,416.5</av:PointCollection>
+            <av:PointCollection x:Key="FalseConnector">385,300 520,300 520,406.5</av:PointCollection>
             <av:PointCollection x:Key="TrueConnector">315,300 140,300 140,360</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -415,7 +415,7 @@
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">250,94.5</av:Point>
             <av:Size x:Key="ShapeSize">200,51</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">350,145.5 350,175.5 150,175.5 150,180</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">350,145.5 350,170</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_1">
@@ -452,12 +452,12 @@
           </If.Else>
         </If>
         <FlowStep.Next>
-          <FlowStep x:Name="__ReferenceID5">
+          <FlowStep x:Name="__ReferenceID6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <av:Point x:Key="ShapeLocation">19,180</av:Point>
+                <av:Point x:Key="ShapeLocation">219,170</av:Point>
                 <av:Size x:Key="ShapeSize">262,60</av:Size>
-                <av:PointCollection x:Key="ConnectorLocation">150,240 150,270 0,270 0,154.02 510,154.02 510,184.02</av:PointCollection>
+                <av:PointCollection x:Key="ConnectorLocation">350,230 350,256.5</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_13">
@@ -478,34 +478,14 @@
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
             <FlowStep.Next>
-              <FlowStep x:Name="__ReferenceID6">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">410,184.02</av:Point>
-                    <av:Size x:Key="ShapeSize">200,51</av:Size>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MessageBox_10">
-                  <ui:MessageBox.Text>
-                    <InArgument x:TypeArguments="x:Object">
-                      <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">intTemperature.ToString()</mca:CSharpValue>
-                    </InArgument>
-                  </ui:MessageBox.Text>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:MessageBox>
-              </FlowStep>
+              <x:Reference>__ReferenceID5</x:Reference>
             </FlowStep.Next>
           </FlowStep>
         </FlowStep.Next>
       </FlowStep>
-      <x:Reference>__ReferenceID5</x:Reference>
       <x:Reference>__ReferenceID6</x:Reference>
     </Flowchart>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Give final informatio about the weather for requested city" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,93" sap2010:WorkflowViewState.IdRef="MessageBox_7">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="200,82" sap2010:WorkflowViewState.IdRef="MessageBox_7">
       <ui:MessageBox.Text>
         <InArgument x:TypeArguments="x:Object">
           <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">"The temperature in "+strCity+ " is "+ Convert.ToString(strWeatherTemperature)+Environment.NewLine+ strWeatherConditions+Environment.NewLine+"advisable outfit is "+ strOutfitSuggestion + Environment.NewLine + strRainGear</mca:CSharpValue>
